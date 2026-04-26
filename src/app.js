@@ -1,3 +1,11 @@
-import { products } from '../data.js';
-console.log(products);
+import {products} from "./data";
+import template  from "./products-template";
 
+
+
+
+const list =  document.querySelector(".list")
+
+console.log(template);
+
+list.innerHTML = template({products})
